@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1>SSR Blog</h1>
+    <h1><nuxt-link to="/">SSR Blog</nuxt-link></h1>
   </nav>
 </template>
 

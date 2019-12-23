@@ -16,7 +16,7 @@ module.exports = {
     ]
   },
 
-  loading: { color: '#fff' },
+  loading: { color: '#409EFF' },
 
   css: [
     'element-ui/lib/theme-chalk/index.css',
@@ -24,19 +24,25 @@ module.exports = {
   ],
 
   plugins: [
-    '@/plugins/globals'
+    '@/plugins/globals',
+    '@/plugins/axios'
   ],
 
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa'
   ],
-  
+
   axios: {},
+
+  env: {
+    appName: 'SSR Blog'
+  },
 
   build: {
     transpile: [/^element-ui/],
     extend(config, ctx) {
-      
+
     }
   }
 }
